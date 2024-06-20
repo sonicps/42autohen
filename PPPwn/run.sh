@@ -49,13 +49,14 @@ arch=$(getconf LONG_BIT)
 if [ $arch -eq 32 ] && [ $CPPBIN = "pppwn64" ] ; then
 CPPBIN="pppwn7"
 fi
-echo -e "\n\n\033[36m _____  _____  _____                 
-|  __ \\|  __ \\|  __ \\
-| |__) | |__) | |__) |_      ___ __
-|  ___/|  ___/|  ___/\\ \\ /\\ / / '_ \\
-| |    | |    | |     \\ V  V /| | | |
-|_|    |_|    |_|      \\_/\\_/ |_| |_|\033[0m
-\n\033[33mhttps://github.com/TheOfficialFloW/PPPwn\033[0m\n" | sudo tee /dev/tty1
+echo -e "\n\n\033[36m  ______ _______ _______ _ _______ ______   ______ 
+ / _____|_______|_______) (_______|_____ \ / _____)
+( (____  _     _ _     _| |_       _____) | (____  
+ \____ \| |   | | |   | | | |     |  ____/ \____ \ 
+ _____) ) |___| | |   | | | |_____| |      _____) )
+(______/ \_____/|_|   |_|_|\______)_|     (______/ 
+                                                   \033[0m
+\n\033[33m                  DONGLE PS4 AUTOHEN\033[0m\n" | sudo tee /dev/tty1
 sudo systemctl stop pppoe
 if [ $USBETHERNET = true ] ; then
 	echo '1-1' | sudo tee /sys/bus/usb/drivers/usb/unbind
